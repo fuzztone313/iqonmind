@@ -1,0 +1,12 @@
+ul.lSPager.lSGallery {
+   margin: 0 auto !important;
+}
+.pd-detail-wraper {
+   margin-bottom: 30px;
+}
+.product-slider {
+   text-align: center;
+}
+img.img-fluid.img-pd-slider {
+   width: 400px;
+}

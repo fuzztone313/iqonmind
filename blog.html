@@ -1,0 +1,327 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> 
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang=""> 
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang=""> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>iQonmind</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="./assets/img/favicon/favicon.ico">
+	<link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./assets/css/lightslider.css" rel="stylesheet">
+	<link href="./assets/css/responsive.css" rel="stylesheet">
+	<link href="./assets/css/style.min.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	<!-- <script src="./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+	<script "type=text/html" src="./assets/js/vendor.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./assets/js/lightslider.js"></script>
+	<script src="./assets/js/function.js"></script>
+	<script src="./assets/js/custom.js"></script>
+	
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+
+ <!-- navigation.nunjucks -->
+<header>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top iqonmind-nav">
+      <a class="navbar-brand" href="home.html">
+         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav">
+      </a>
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+         aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse collapse-flex justify-content-around" id="navbarsExampleDefault">
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-iqo dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Kategori</a>
+               <div class="dropdown-menu dropdown-iqo" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/laptop-ico.svg" alt="" class="nav-ico"> Laptop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/desktop-ico.svg" alt="" class="nav-ico"> Desktop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/monitor-ico.svg" alt="" class="nav-ico"> Monitor</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/server-ico.svg" alt="" class="nav-ico"> Server</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/printer-ico.svg" alt="" class="nav-ico"> Printer</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/scan-ico.svg" alt="" class="nav-ico"> Scanner</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/ink-toner-ico.svg" alt="" class="nav-ico"> Ink &amp; Toner</a>
+               </div>
+            </li>
+         </ul>
+         <div class="search-wraper">
+            <div class="src-left">
+               <span class="search-ico-wraper">
+                  <i class="fa fa-search ico-src" aria-hidden="true"></i>
+               </span>
+               <div class="input-search">
+                  <input type="text" class="form-control input-src-custom" id="cariproduk" aria-describedby="cariproduk" placeholder="Cari Produk">
+               </div>
+            </div>
+            <div class="src-right">
+               <div class="select-search">
+                  <select class="form-control select-src-custom" id="exampleFormControlSelect1">
+                     <option>Semua Kategori</option>
+                     <option>Laptop</option>
+                     <option>Desktop</option>
+                     <option>Monitor</option>
+                     <option>Server</option>
+                     <option>Printer</option>
+                     <option>Scanner</option>
+                     <option>Ink &amp; Toner</option>
+                  </select>
+               </div>
+               <div class="button-search">
+                  <button class="btn btn-src">Cari</button>
+               </div>
+            </div>
+         </div>
+         <div class="nav-profil-wraper">
+            <div class="dropdown show">
+                  <a href="cart.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-cart" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">Total: <span class="cart-num">2 Barang</span></h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/01.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/02.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Keranjang</a>
+                  </div>
+            </div>
+            <div class="dropdown show">
+                  <a href="notification.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-notification" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">
+                              Notifikasi
+                        </h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Semua Notifikasi</a>
+                  </div>
+            </div>
+            <a href="wishlist.html" class="nav-profile-link">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown show">
+                  <a href="profile.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/img/cl-03.jpg" alt="" class="profile-ico">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-profile" aria-labelledby="dropdownCart">                        
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="profile.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                          <i class="fa fa-user" aria-hidden="true"></i> Profile Anda
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="login.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                           <i class="fa fa-power-off" aria-hidden="true"></i> Logout
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+
+	<main role="main" class="main-page">
+    <section class="im-nav-unit-container">
+       <div class="container-fluid">
+          <div class="row justify-content-center">
+             <div class="col-lg-11">
+                <div class="row">
+                   <div class="col-lg-3">
+                      <div class="side-nav-card">
+                         <ul class="ul-nav-link">
+                            <li class="li-nav-link"><a href="about.html" class="side-nav-link">Tentang Kami</a></li>
+                              <li class="li-nav-link"><a href="privacy.html" class="side-nav-link">Kebijakan Privasi</a></li>
+                              <li class="li-nav-link"><a href="terms.html" class="side-nav-link">Syarat dan Ketentuan</a></li>
+                              <li class="li-nav-link"><a href="faq.html" class="side-nav-link">FAQ</a></li>
+                              <li class="li-nav-link"><a href="blog.html" class="side-nav-link active">Blog</a></li>
+                              <li class="li-nav-link"><a href="partner.html" class="side-nav-link">Partner Kami</a></li>
+                              <li class="li-nav-link"><a href="contact.html" class="side-nav-link">Hubungi Kami</a></li>
+                         </ul>                        
+                      </div>
+                   </div>
+                   <div class="col-lg-9">
+                      <div class="im-content-container">
+                         <h4 class="im-title">Blog</h4>
+                         <hr class="hr-im">
+                         <div class="row">
+                            <div class="col-lg-4">
+                               <div class="im-blog-unit">
+                                  <figure class="img-blog-container">
+                                     <img src="./assets/img/blog/bl-02.jpeg" alt="" class="img-fluid img-blog">
+                                  </figure>
+                                  <small class="blog-category">Tips</small>
+                                  <h5 class="blog-title-im"><a href="blog-detail.html" class="blog-link">Tips &amp; Trik Saat Berbelanja Komputer</a></h5>
+                               </div>
+                            </div>
+                            <div class="col-lg-4">
+                               <div class="im-blog-unit">
+                                  <figure class="img-blog-container">
+                                     <img src="./assets/img/blog/bl-03.jpeg" alt="" class="img-fluid img-blog">
+                                  </figure>
+                                  <small class="blog-category">e - Catalogue</small>
+                                  <h5 class="blog-title-im"><a href="blog-detail.html" class="blog-link">Serba Serbi Belanja Di E - Catalogue</a></h5>
+                               </div>
+                            </div>
+                            <div class="col-lg-4">
+                               <div class="im-blog-unit">
+                                  <figure class="img-blog-container">
+                                     <img src="./assets/img/blog/bl-04.jpeg" alt="" class="img-fluid img-blog">
+                                  </figure>
+                                  <small class="blog-category">Tips</small>
+                                  <h5 class="blog-title-im"><a href="blog-detail.html" class="blog-link">Kapan Sebaiknya Mengganti Laptop</a></h5>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+  </main>
+
+ <footer>
+   <div class="container-fluid">
+      <div class="row justify-content-center">
+         <div class="col-md-11">
+            <div class="row">
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">iQonmind</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="about.html" class="link-ft">Tentang Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="privacy.html" class="link-ft">Kebijakan Perusahaan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="terms.html" class="link-ft">Syarat dan Ketentuan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="contact.html" class="link-ft">Hubungi Kami</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">Fitur</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="blog.html" class="link-ft">Blog</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="partner.html" class="link-ft">Partner Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="faq.html" class="link-ft">FAQ</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Hubungi Kami</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-map-marker ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-phone ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">+(704) 279-1249</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-envelope-o ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">letstalk@iqonmind.com</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Subscribe</h4>
+                  <div class="subscribe-box">
+                     <p class="subcribe-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, ipsum.</p>
+                     <form>
+                        <div class="form-group">
+                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button class="btn btn-sub">Beri Tahu Saya!</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+</body>
+
+
+</html>

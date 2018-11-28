@@ -1,0 +1,687 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> 
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang=""> 
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang=""> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>iQonmind</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="./assets/img/favicon/favicon.ico">
+	<link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./assets/css/lightslider.css" rel="stylesheet">
+	<link href="./assets/css/responsive.css" rel="stylesheet">
+	<link href="./assets/css/style.min.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	<!-- <script src="./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+	<script "type=text/html" src="./assets/js/vendor.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./assets/js/lightslider.js"></script>
+	<script src="./assets/js/function.js"></script>
+	<script src="./assets/js/custom.js"></script>
+	
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+
+ <!-- navigation.nunjucks -->
+<header>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top iqonmind-nav">
+      <a class="navbar-brand" href="home.html">
+         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav">
+      </a>
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+         aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse collapse-flex justify-content-around" id="navbarsExampleDefault">
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-iqo dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Kategori</a>
+               <div class="dropdown-menu dropdown-iqo" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/laptop-ico.svg" alt="" class="nav-ico"> Laptop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/desktop-ico.svg" alt="" class="nav-ico"> Desktop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/monitor-ico.svg" alt="" class="nav-ico"> Monitor</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/server-ico.svg" alt="" class="nav-ico"> Server</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/printer-ico.svg" alt="" class="nav-ico"> Printer</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/scan-ico.svg" alt="" class="nav-ico"> Scanner</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/ink-toner-ico.svg" alt="" class="nav-ico"> Ink &amp; Toner</a>
+               </div>
+            </li>
+         </ul>
+         <div class="search-wraper">
+            <div class="src-left">
+               <span class="search-ico-wraper">
+                  <i class="fa fa-search ico-src" aria-hidden="true"></i>
+               </span>
+               <div class="input-search">
+                  <input type="text" class="form-control input-src-custom" id="cariproduk" aria-describedby="cariproduk" placeholder="Cari Produk">
+               </div>
+            </div>
+            <div class="src-right">
+               <div class="select-search">
+                  <select class="form-control select-src-custom" id="exampleFormControlSelect1">
+                     <option>Semua Kategori</option>
+                     <option>Laptop</option>
+                     <option>Desktop</option>
+                     <option>Monitor</option>
+                     <option>Server</option>
+                     <option>Printer</option>
+                     <option>Scanner</option>
+                     <option>Ink &amp; Toner</option>
+                  </select>
+               </div>
+               <div class="button-search">
+                  <button class="btn btn-src">Cari</button>
+               </div>
+            </div>
+         </div>
+         <div class="nav-profil-wraper">
+            <div class="dropdown show">
+                  <a href="cart.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-cart" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">Total: <span class="cart-num">2 Barang</span></h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/01.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/02.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Keranjang</a>
+                  </div>
+            </div>
+            <div class="dropdown show">
+                  <a href="notification.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-notification" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">
+                              Notifikasi
+                        </h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Semua Notifikasi</a>
+                  </div>
+            </div>
+            <a href="wishlist.html" class="nav-profile-link">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown show">
+                  <a href="profile.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/img/cl-03.jpg" alt="" class="profile-ico">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-profile" aria-labelledby="dropdownCart">                        
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="profile.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                          <i class="fa fa-user" aria-hidden="true"></i> Profile Anda
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="login.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                           <i class="fa fa-power-off" aria-hidden="true"></i> Logout
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+
+   <main role="main" class="main-page">
+      <section class="main-status-payment">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="page-breadcrumb">
+                   <nav class="breadcrumb-nav">
+                      <ul class="ol-breadcrumb">
+                         <li class="li-breadcrumb">
+                            <a href="home.html" class="bread-link">Beranda</a> 
+                            <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                         </li>
+                         <li class="li-breadcrumb">
+                            <a href="methode-payment.html" class="bread-link">Pilih Metode Pembayaran</a> 
+                            <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                         </li>
+                         <li class="li-breadcrumb">
+                            Status Pembayaran
+                         </li>
+                      </ul>
+                   </nav>
+                </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-11">
+                <h6 class="top-left-title">Konfirmasi Pembayaran</h5>
+                <hr class="hr-stat-pay-top">
+                <div class="status-payment-container">
+                  <div class="row">
+                    <div class="col-lg-3">                      
+                      <div class="side-nav-card">
+                        <ul class="ul-nav-link">
+                          <li class="li-nav-link">
+                            <a href="status-payment.html" class="side-nav-link">Status Pembayaran</a>
+                          </li>
+                          <li class="li-nav-link">
+                            <a href="status-order.html" class="side-nav-link">Status Pemesanan</a>
+                          </li>
+                          <li class="li-nav-link">
+                            <a href="confirm-order.html" class="side-nav-link">Konfirmasi Pemesanan</a>
+                          </li>
+                          <li class="li-nav-link">
+                            <a href="history-transaction.html" class="side-nav-link active">Histori Transaksi</a>
+                          </li>                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="stat-order-container">
+                           <div class="stat-pay-filter">
+                              <div class="row justify-content-center">
+                                 <div class="col-lg-3">
+                                    <div class="stat-pay-filter-unit">
+                                       <div class="filter-name">Status</div>
+                                       <div class="filter-form">
+                                          <div class="form-group mb-0">
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Status</option>
+                                                <option>Status</option>
+                                                <option>Status</option>
+                                                <option>Status</option>
+                                                <option>Status</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="stat-pay-filter-unit">
+                                       <div class="filter-name">Tanggal</div>
+                                       <div class="filter-form">
+                                          <div class="date-stat-pay">
+                                             <div class="date-wraper">
+                                                <div class="form-group mb-0">
+                                                   <input type="date" class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="table-divider">-</div>
+                                             <div class="date-wraper">
+                                                <div class="form-group mb-0">
+                                                   <input type="date" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="stat-pay-filter-unit">
+                                       <div class="filter-name">Pilih Tipe Pesanan</div>
+                                       <div class="filter-form">
+                                          <div class="form-group mb-0">
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Regular</option>
+                                                <option>Regular</option>
+                                                <option>Regular</option>
+                                                <option>Regular</option>
+                                                <option>Regular</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <div class="display-product-history">
+                                       <div class="row">
+                                          <div class="col-lg-4">
+                                             <div class="display-history-img">
+                                                <img src="./assets/img/products/01.png" alt="" class="img-fluid img-hd">
+                                             </div>
+                                             <div class="product-name-history">HP 240 G6 NOTEBOOK PC</div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                             <div class="prod-history-detail-container">
+                                                <div class="product-codename">INV/12314701/XVII/213/XI/12301928</div>
+                                                <ul class="ul-date-history">
+                                                   <li class="li-date-history">Tanggal Transaksi :
+                                                      <span class="date-bold">2 Juli 2018</span>
+                                                   </li>
+                                                   <li class="li-date-history">Total : Rp 10.850.000</li>
+                                                </ul>
+                                                <div class="date-higlight">
+                                                   Senin, 9 Juli 2018 pukul 13:00 WIB - Menunggu proses pembayaran dan verifikasi iQonmind
+                                                </div>
+                                                <div class="btn-chat-wraper">
+                                                   <button type="button" class="btn btn-chat mb-2">
+                                                      <i class="fa fa-comments-o" aria-hidden="true"></i> Chat iQonmind
+                                                   </button>
+                                                </div>
+                                                <div class="detail-abs">
+                                                   <a class="detail-triger" data-toggle="collapse" href="#productOne" role="button" aria-expanded="false" aria-controls="productOne">
+                                                      Detail
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="collapse" id="productOne">
+                                                <div class="card card-body card-history-detail">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <ul class="ul-history-pay-detail">
+                                                            <li class="li-history-pay-detail">
+                                                               <div class="history-detail-address">
+                                                                  <div class="hda-title">Alamat Tujuan</div>
+                                                                  <div class="hda-detail">
+                                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta cupiditate rem asperiores veritatis beatae quo explicabo
+                                                                     repellat. Eos, ut.
+                                                                  </div>
+                                                                  <div class="hda-address">
+                                                                     Kota Bandung 40212
+                                                                     <br> Jawa Barat
+                                                                     <br> Nomor Handphone : 078721923221
+                                                                  </div>
+                                                               </div>
+                                                            </li>
+                                                            <li class="li-history-pay-detail">
+                                                               <div class="history-detail-product">
+                                                                  <div class="row">
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Jumlah Barang</div>
+                                                                           <div class="hdp-value">1</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Ongkos Kirim</div>
+                                                                           <div class="hdp-value">Rp 20.000</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Catatan Untuk Penjual</div>
+                                                                           <div class="hdp-value">-</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Biaya Asuransi</div>
+                                                                           <div class="hdp-value">-</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Harga Barang</div>
+                                                                           <div class="hdp-value">Rp 10.850.000</div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </li>
+                                                         </ul>
+                                                         <hr class="hr-stat-pay">
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="stat-total-payment">Total Pembayaran : Rp 10.850.000</div>
+                                                         <hr class="hr-stat-pay">
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="progress-unit">
+                                                            <div class="pg-unit-bar">
+                                                               <div class="pg-bar">System</div>
+                                                               <div class="pg-bar-date">04/06/2018 13:14</div>
+                                                            </div>
+                                                            <div class="pg-unit-bar-caption">
+                                                               <div class="pg-caption">Menunggu proses pembayaran dan verifikasi</div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="progress-unit">
+                                                            <div class="pg-unit-bar">
+                                                               <div class="pg-bar">System</div>
+                                                               <div class="pg-bar-date">04/06/2018 13:14</div>
+                                                            </div>
+                                                            <div class="pg-unit-bar-caption">
+                                                               <div class="pg-caption">
+                                                                  Melakukan proses Check Out Order
+                                                                  <br> Menunggu Konfirmasi pembayaran
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-12">
+                                    <div class="display-product-history">
+                                       <div class="row">
+                                          <div class="col-lg-4">
+                                             <div class="display-history-img">
+                                                <img src="./assets/img/products/01.png" alt="" class="img-fluid img-hd">
+                                             </div>
+                                             <div class="product-name-history">HP 240 G6 NOTEBOOK PC</div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                             <div class="prod-history-detail-container">
+                                                <div class="product-codename">INV/12314701/XVII/213/XI/12301928</div>
+                                                <ul class="ul-date-history">
+                                                   <li class="li-date-history">Tanggal Transaksi : 2 Juli 2018</li>
+                                                   <li class="li-date-history">Tanggal Transaksi : 8 Juli 2018</li>
+                                                </ul>
+                                                <div class="date-higlight">
+                                                   Senin, 9 Juli 2018 pukul 13:00 WIB - Menunggu proses pembayaran dan verifikasi iQonmind
+                                                </div>
+                                                <div class="btn-chat-wraper">
+                                                   <button type="button" class="btn btn-chat mb-2">
+                                                      <i class="fa fa-comments-o" aria-hidden="true"></i> Chat iQonmind
+                                                   </button>
+                                                </div>
+                                                <div class="detail-abs">
+                                                   <a class="detail-triger" data-toggle="collapse" href="#productTwo" role="button" aria-expanded="false" aria-controls="productTwo">
+                                                      Detail
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="collapse" id="productTwo">
+                                                <div class="card card-body card-history-detail">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <ul class="ul-history-pay-detail">
+                                                            <li class="li-history-pay-detail">
+                                                               <div class="history-detail-address">
+                                                                  <div class="hda-title">Alamat Tujuan</div>
+                                                                  <div class="hda-detail">
+                                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta cupiditate rem asperiores veritatis beatae quo explicabo
+                                                                     repellat. Eos, ut.
+                                                                  </div>
+                                                                  <div class="hda-address">
+                                                                     Kota Bandung 40212
+                                                                     <br> Jawa Barat
+                                                                     <br> Nomor Handphone : 078721923221
+                                                                  </div>
+                                                               </div>
+                                                            </li>
+                                                            <li class="li-history-pay-detail">
+                                                               <div class="history-detail-product">
+                                                                  <div class="row">
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Jumlah Barang</div>
+                                                                           <div class="hdp-value">1</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Ongkos Kirim</div>
+                                                                           <div class="hdp-value">Rp 20.000</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Catatan Untuk Penjual</div>
+                                                                           <div class="hdp-value">-</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Biaya Asuransi</div>
+                                                                           <div class="hdp-value">-</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="col-lg-4">
+                                                                        <div class="hdp-unit">
+                                                                           <div class="hdp-title">Harga Barang</div>
+                                                                           <div class="hdp-value">Rp 10.850.000</div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </li>
+                                                         </ul>
+                                                         <hr class="hr-stat-pay">
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="stat-total-payment">Total Pembayaran : Rp 10.850.000</div>
+                                                         <hr class="hr-stat-pay">
+                                                      </div>
+                                                   </div>
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="progress-unit">
+                                                            <div class="pg-unit-bar">
+                                                               <div class="pg-bar">System</div>
+                                                               <div class="pg-bar-date">04/06/2018 13:14</div>
+                                                            </div>
+                                                            <div class="pg-unit-bar-caption">
+                                                               <div class="pg-caption">Menunggu proses pembayaran dan verifikasi</div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="progress-unit">
+                                                            <div class="pg-unit-bar">
+                                                               <div class="pg-bar">System</div>
+                                                               <div class="pg-bar-date">04/06/2018 13:14</div>
+                                                            </div>
+                                                            <div class="pg-unit-bar-caption">
+                                                               <div class="pg-caption">
+                                                                  Melakukan proses Check Out Order
+                                                                  <br> Menunggu Konfirmasi pembayaran
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="pagination-page">
+                                       <nav class="nav-page" aria-label="Page navigation example">
+                                          <ul class="pagination page-controller">
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg page-flex" href="#">
+                                                   <div class="page-ico-wraper">
+                                                      <i class="pg-ico fa fa-chevron-left" aria-hidden="true"></i>
+                                                   </div>
+                                                   <span class="page-prev">Previous</span>
+                                                </a>
+                                             </li>
+                                             <li class="page-item active">
+                                                <a class="page-link pg-pg" href="#">1</a>
+                                             </li>
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg" href="#">2</a>
+                                             </li>
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg" href="#">3</a>
+                                             </li>
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg" href="#">4</a>
+                                             </li>
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg" href="#">5</a>
+                                             </li>
+                                             <li class="page-item">
+                                                <a class="page-link pg-pg page-flex" href="#">
+                                                   <span class="page-next">Next</span>
+                                                   <div class="page-ico-wraper">
+                                                      <i class="pg-ico fa fa-chevron-right" aria-hidden="true"></i>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </nav>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </section>
+   </main>   
+
+ <footer>
+   <div class="container-fluid">
+      <div class="row justify-content-center">
+         <div class="col-md-11">
+            <div class="row">
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">iQonmind</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="about.html" class="link-ft">Tentang Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="privacy.html" class="link-ft">Kebijakan Perusahaan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="terms.html" class="link-ft">Syarat dan Ketentuan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="contact.html" class="link-ft">Hubungi Kami</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">Fitur</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="blog.html" class="link-ft">Blog</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="partner.html" class="link-ft">Partner Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="faq.html" class="link-ft">FAQ</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Hubungi Kami</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-map-marker ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-phone ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">+(704) 279-1249</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-envelope-o ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">letstalk@iqonmind.com</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Subscribe</h4>
+                  <div class="subscribe-box">
+                     <p class="subcribe-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, ipsum.</p>
+                     <form>
+                        <div class="form-group">
+                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button class="btn btn-sub">Beri Tahu Saya!</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+</body>
+
+
+</html>

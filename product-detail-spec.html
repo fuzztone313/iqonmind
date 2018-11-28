@@ -1,0 +1,690 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> 
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang=""> 
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang=""> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>iQonmind</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="./assets/img/favicon/favicon.ico">
+	<link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./assets/css/lightslider.css" rel="stylesheet">
+	<link href="./assets/css/responsive.css" rel="stylesheet">
+	<link href="./assets/css/style.min.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	<!-- <script src="./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+	<script "type=text/html" src="./assets/js/vendor.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./assets/js/lightslider.js"></script>
+	<script src="./assets/js/function.js"></script>
+	<script src="./assets/js/custom.js"></script>
+	
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+
+ <!-- navigation.nunjucks -->
+<header>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top iqonmind-nav">
+      <a class="navbar-brand" href="home.html">
+         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav">
+      </a>
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+         aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse collapse-flex justify-content-around" id="navbarsExampleDefault">
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-iqo dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Kategori</a>
+               <div class="dropdown-menu dropdown-iqo" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/laptop-ico.svg" alt="" class="nav-ico"> Laptop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/desktop-ico.svg" alt="" class="nav-ico"> Desktop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/monitor-ico.svg" alt="" class="nav-ico"> Monitor</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/server-ico.svg" alt="" class="nav-ico"> Server</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/printer-ico.svg" alt="" class="nav-ico"> Printer</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/scan-ico.svg" alt="" class="nav-ico"> Scanner</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/ink-toner-ico.svg" alt="" class="nav-ico"> Ink &amp; Toner</a>
+               </div>
+            </li>
+         </ul>
+         <div class="search-wraper">
+            <div class="src-left">
+               <span class="search-ico-wraper">
+                  <i class="fa fa-search ico-src" aria-hidden="true"></i>
+               </span>
+               <div class="input-search">
+                  <input type="text" class="form-control input-src-custom" id="cariproduk" aria-describedby="cariproduk" placeholder="Cari Produk">
+               </div>
+            </div>
+            <div class="src-right">
+               <div class="select-search">
+                  <select class="form-control select-src-custom" id="exampleFormControlSelect1">
+                     <option>Semua Kategori</option>
+                     <option>Laptop</option>
+                     <option>Desktop</option>
+                     <option>Monitor</option>
+                     <option>Server</option>
+                     <option>Printer</option>
+                     <option>Scanner</option>
+                     <option>Ink &amp; Toner</option>
+                  </select>
+               </div>
+               <div class="button-search">
+                  <button class="btn btn-src">Cari</button>
+               </div>
+            </div>
+         </div>
+         <div class="nav-profil-wraper">
+            <div class="dropdown show">
+                  <a href="cart.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-cart" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">Total: <span class="cart-num">2 Barang</span></h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/01.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/02.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Keranjang</a>
+                  </div>
+            </div>
+            <div class="dropdown show">
+                  <a href="notification.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-notification" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">
+                              Notifikasi
+                        </h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Semua Notifikasi</a>
+                  </div>
+            </div>
+            <a href="wishlist.html" class="nav-profile-link">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown show">
+                  <a href="profile.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/img/cl-03.jpg" alt="" class="profile-ico">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-profile" aria-labelledby="dropdownCart">                        
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="profile.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                          <i class="fa fa-user" aria-hidden="true"></i> Profile Anda
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="login.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                           <i class="fa fa-power-off" aria-hidden="true"></i> Logout
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+ 
+   <main role="main" class="main-page">
+      <section class="product-detail">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="page-breadcrumb">
+                     <nav class="breadcrumb-nav">
+                        <ul class="ol-breadcrumb">
+                           <li class="li-breadcrumb">
+                              <a href="home.html" class="bread-link">Beranda</a>
+                              <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                           </li>
+                           <li class="li-breadcrumb">
+                              <a href="avascript:void(0)" class="bread-link">Kategori</a>
+                              <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                           </li>
+                           <li class="li-breadcrumb">
+                              <a href="javascript:void(0)" class="bread-link">Laptop</a>
+                              <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                           </li>
+                           <li class="li-breadcrumb">
+                              Detail
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="product-detail-container">
+                     <div class="row">
+                        <div class="col-lg-5">
+                           <div class="pd-detail-wraper">
+                              <div class="item">
+                                 <div class="clearfix" style="max-width:474px;">
+                                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden thumb-control">
+                                       <li class="product-slider" data-thumb="./assets/img/products/01.png">
+                                          <img class="img-fluid img-pd-slider" src="./assets/img/products/01.png" />
+                                       </li>
+                                       <li class="product-slider" data-thumb="./assets/img/products/02.png">
+                                          <img class="img-fluid img-pd-slider" src="./assets/img/products/02.png" />
+                                       </li>
+                                       <li class="product-slider" data-thumb="./assets/img/products/03.png">
+                                          <img class="img-fluid img-pd-slider" src="./assets/img/products/03.png" />
+                                       </li>
+                                       <li class="product-slider" data-thumb="./assets/img/products/04.png">
+                                          <img class="img-fluid img-pd-slider" src="./assets/img/products/04.png" />
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-7">
+                           <div class="pd-desciption-box">
+                              <div class="pd-desc-head">
+                                 <div class="pd-brand">HP</div>
+                                 <h4 class="pd-name">HP 240 G6 NOTEBOOK PC</h4>
+                                 <div class="pd-rating-wraper">
+                                    <i class="fa fa-star ico-rating" aria-hidden="true"></i>
+                                    <i class="fa fa-star ico-rating" aria-hidden="true"></i>
+                                    <i class="fa fa-star ico-rating" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o ico-rating" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o ico-rating" aria-hidden="true"></i>
+                                 </div>
+                                 <div class="num-preview">Dari 50 ulasan</div>
+                                 <hr class="pd">
+                                 <h6 class="pd-bold-sub-top">Beli Produk</h6>
+                                 <div class="pd-quantity">
+                                    <div class="row">
+                                       <div class="col-lg-6 mb-3">
+                                          <button class="btn btn-cart" data-toggle="modal" data-target="#modalProduct">
+                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> Beli Produk</button>
+                                          <div class="modal fade" id="modalProduct" tabindex="-1" role="dialog" aria-labelledby="modalProduct" aria-hidden="true">
+                                             <div class="modal-dialog modal-product-width" role="document">
+                                                <div class="modal-content">
+                                                   <div class="modal-header modal-header-payment">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Beli</h5>
+                                                      <div class="close-detail-payment" data-dismiss="modal" aria-label="Close">
+                                                         <i class="fa fa-times ico-close" aria-hidden="true"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="modal-body mb-product-detail">
+                                                      <div class="row">
+                                                         <div class="col-lg-6">
+                                                            <div class="product-name-title">Nama Produk</div>
+                                                            <div class="product-name-pop-up">HP 240 G6 NOTEBOOK PC
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                               <div class="col-lg-6">
+                                                                  <div class="form-group">
+                                                                     <label class="label-popup" for="jumalhbarang">Jumlah Barang
+                                                                     </label>
+                                                                     <input type="number" class="form-control input-im" id="jumlahbarang" value="1">
+                                                                  </div>
+
+                                                               </div>
+                                                               <div class="col-lg-6">
+                                                                  <div class="sum-product">Harga Barang
+                                                                  </div>
+                                                                  <div class="sum-product-value">Rp 10.000.000
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                               <label class="label-popup" for="noteforseller">Catatan Untuk Penjual
+                                                               </label>
+                                                               <textarea class="form-control" id="noteforseller" rows="3"></textarea>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row row-address" id="row-address">
+                                                         <div class="col-lg-12">
+                                                            <div class="pop-up-addres-container">
+                                                               <div class="pop-up-address-flex">
+                                                                  <div class="pop-up-address-title">Alamat Tujuan Pengiriman</div>
+                                                                  <div class="pop-up-address-option">
+                                                                     <div class="pao-select">
+                                                                        <select class="form-control">
+                                                                           <optgroup label="Marissa">
+                                                                              <option value="alamat1">Alamat 1</option>
+                                                                              <option value="alamat2">Alamat 2</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Poppy Sovia">
+                                                                              <option value="alamat1">Alamat 1</option>
+                                                                              <option value="alamat2">Alamat 2</option>
+                                                                           </optgroup>
+                                                                        </select>
+                                                                     </div>
+                                                                     <a href="javascript:void(0)" class="add-addres-pop" id="click-add">Tambah Alamat Baru
+                                                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                                     </a>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="address-field">
+                                                                  <p class="addres-desc">
+                                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti sint temporibus! Officiis nisi tempora quia beatae
+                                                                     mollitia ducimus totam facilis cumque! Neque, vitae aliquid!
+                                                                  </p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row row-add-address" id="row-add-address">
+                                                         <div class="col-lg-12">
+                                                            <div class="pop-up-addres-container">
+                                                               <a href="javascript:void(0)" class="add-addres-pop" id="click-back">
+                                                                  <i class="fa fa-chevron-left" aria-hidden="true"></i> Kembali
+                                                               </a>
+                                                               <div class="form-add-address-field">
+                                                                  <form>
+                                                                     <div class="form-row">
+                                                                        <div class="form-group col-lg-4">
+                                                                           <label class="label-popup">Nama Penerima</label>
+                                                                           <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-4">
+                                                                           <label class="label-popup">No Handphone</label>
+                                                                           <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-4">
+                                                                           <label class="label-popup">Kode Pos</label>
+                                                                           <input type="text" class="form-control">
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-row">
+                                                                        <div class="form-group col-lg-4">
+                                                                           <label class="label-popup" for="inputState">Provinsi</label>
+                                                                           <select id="inputState" class="form-control" value="Provinsi">
+                                                                              <option selected>Provinsi</option>
+                                                                              <option>...</option>
+                                                                           </select>
+                                                                        </div>
+                                                                        <div class="form-group col-lg-4">
+                                                                           <label class="label-popup" for="inputState">Kota/Kabupaten</label>
+                                                                           <select id="inputState" class="form-control">
+                                                                              <option selected>Kota/Kabupaten</option>
+                                                                              <option>...</option>
+                                                                           </select>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="form-row">
+                                                                        <div class="form-group col-lg-12">
+                                                                           <label class="label-popup" for="exampleFormControlTextarea1">Alamat</label>
+                                                                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                                        </div>
+                                                                     </div>
+                                                                  </form>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row justify-content-between">
+                                                         <div class="col-lg-2">
+                                                            <div class="form-group">
+                                                               <label class="label-popup" for="exampleFormControlSelect1">Paket Pengiriman
+                                                               </label>
+                                                               <select class="form-control input-im" id="exampleFormControlSelect1">
+                                                                  <option>Regular</option>
+                                                                  <option>Regular</option>
+                                                                  <option>Regular</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-lg-2">
+                                                            <div class="form-group">
+                                                               <label class="label-popup" for="exampleFormControlSelect1">Kurir Pengiriman
+                                                               </label>
+                                                               <select class="form-control input-im" id="exampleFormControlSelect1">
+                                                                  <option>JT&amp;T</option>
+                                                                  <option>JNE</option>
+                                                                  <option>TIKI</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-lg-2">
+                                                            <div class="option-product">
+                                                               <div class="option-product-item-title">Biaya Asuransi
+                                                               </div>
+                                                               <div class="option-product-item-value">Wajib Asuransi
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-lg-2">
+                                                            <div class="option-product">
+                                                               <div class="option-product-item-title">Ongkos Kirim
+                                                               </div>
+                                                               <div class="option-product-item-value">Rp 30.000
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-lg-2">
+                                                            <div class="option-product">
+                                                               <div class="option-product-item-title">Subtotal</div>
+                                                               <div class="option-product-item-value-bold">Rp 10.030.000
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row">
+                                                         <div class="col-lg-12">
+                                                            <div class="product-attention">
+                                                               <p class="prod-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                                                  corporis vero sint sit natus fugit facilis in vitae nam, harum
+                                                                  iste architecto quod? Adipisci fugit, recusandae quaerat nobis,
+                                                                  sint doloremque iure nemo fuga esse temporibus ut dolor nisi
+                                                                  neque quas sapiente natus pariatur dolores repellat facere
+                                                                  dignissimos aliquam ratione numquam.
+                                                               </p>
+                                                            </div>
+                                                            <div class="product-modal-caption">
+                                                               <div class="product-modal-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                                                                  consequatur deleniti quidem quae itaque modi voluptatibus
+                                                                  voluptates officiis, nam, cumque porro, alias nihil nostrum
+                                                                  commodi!
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="row justify-content-center">
+                                                         <div class="col-lg-4">
+                                                            <div class="btn-buy-product-modal">
+                                                               <button class="btn btn-popup-buy btn-block">
+                                                                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                                  Beli Produk Ini
+                                                               </button>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <button class="btn btn-heart">
+                                             <i class="fa fa-heart" aria-hidden="true"></i> Wishlist</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <h6 class="pd-bold-sub-btm">Harga Total</h6>
+                                 <h4 class="total-price">IDR 10.987.212</h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="product-detail-tab-pane">
+                     <div class="pd-tab-menu">
+                        <a href="product-detail.html" class="nav-tab-menu-pd">Tinjuan</a>
+                        <a href="product-detail-spec.html" class="nav-tab-menu-pd active">Spesifikasi</a>
+                        <a href="product-detail-review.html" class="nav-tab-menu-pd">Ulasan</a>
+                     </div>
+                     <div class="product-detail-tab-container">
+                        <div class="row">
+                           <div class="col-lg-9">
+                              <h5 class="pd-tab-pane-title">Spesifikasi</h5>
+                              <div class="table-responsive">
+                                 <table class="table table-spec table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">Processor</td>
+                                          <td class="td-bd">Intel® Core™ i5-7200U Processor with Intel® HD Graphics 620 (2.5 GHz base frequency,
+                                             up to 3.1 GHz with Intel® Turbo Boost Technology, 3 MB cache, 2 cores)</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">OS</td>
+                                          <td class="td-bd">Windows 10 Home Single Language 64 – HP recommends Windows 10 Pro.</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">RAM</td>
+                                          <td class="td-bd">4 GB DDR4-2133 SDRAM (1 x 4 GB)</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">Harddisk</td>
+                                          <td class="td-bd">1 TB 5400 rpm SATA</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">VGA</td>
+                                          <td class="td-bd">Intel® HD Graphics 620</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">Weight</td>
+                                          <td class="td-bd">Starting at 1.85 kg</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="td-bd td-bd-title">Height</td>
+                                          <td class="td-bd">14" diagonal HD SVA anti-glare LED-backlit (1366 x 768)</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <hr class="hr-pd">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="bottom-category-pd">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="title-wraper">
+                     <h4 class="title-pd">Produk Terkait</h4>
+                  </div>
+                  <div class="bottom-category-container-pd">
+                     <div class="row">
+                        <div class="col-md-3">
+                           <div class="product-box">
+                              <div class="pb-img-wraper">
+                                 <img src="./assets/img/products/01.png" alt="" class="img-fluid img-prd">
+                              </div>
+                              <div class="product-name-wraper">
+                                 <h5 class="product-name">
+                                    <a href="product-detail.html" class="produck-detail-link">HP 240 G6 NOTEBOOK PC</a>
+                                 </h5>
+                              </div>
+                              <div class="price-wraper">
+                                 <h5 class="product-price">IDR 10.850.000</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="product-box">
+                              <div class="pb-img-wraper">
+                                 <img src="./assets/img/products/01.png" alt="" class="img-fluid img-prd">
+                              </div>
+                              <div class="product-name-wraper">
+                                 <h5 class="product-name">
+                                    <a href="product-detail.html" class="produck-detail-link">HP 240 G6 NOTEBOOK PC</a>
+                                 </h5>
+                              </div>
+                              <div class="price-wraper">
+                                 <h5 class="product-price">IDR 10.850.000</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="product-box">
+                              <div class="pb-img-wraper">
+                                 <img src="./assets/img/products/01.png" alt="" class="img-fluid img-prd">
+                              </div>
+                              <div class="product-name-wraper">
+                                 <h5 class="product-name">
+                                    <a href="product-detail.html" class="produck-detail-link">HP 240 G6 NOTEBOOK PC</a>
+                                 </h5>
+                              </div>
+                              <div class="price-wraper">
+                                 <h5 class="product-price">IDR 10.850.000</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="product-box">
+                              <div class="pb-img-wraper">
+                                 <img src="./assets/img/products/01.png" alt="" class="img-fluid img-prd">
+                              </div>
+                              <div class="product-name-wraper">
+                                 <h5 class="product-name">
+                                    <a href="product-detail.html" class="produck-detail-link">HP 240 G6 NOTEBOOK PC</a>
+                                 </h5>
+                              </div>
+                              <div class="price-wraper">
+                                 <h5 class="product-price">IDR 10.850.000</h5>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+ <footer>
+   <div class="container-fluid">
+      <div class="row justify-content-center">
+         <div class="col-md-11">
+            <div class="row">
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">iQonmind</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="about.html" class="link-ft">Tentang Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="privacy.html" class="link-ft">Kebijakan Perusahaan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="terms.html" class="link-ft">Syarat dan Ketentuan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="contact.html" class="link-ft">Hubungi Kami</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">Fitur</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="blog.html" class="link-ft">Blog</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="partner.html" class="link-ft">Partner Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="faq.html" class="link-ft">FAQ</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Hubungi Kami</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-map-marker ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-phone ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">+(704) 279-1249</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-envelope-o ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">letstalk@iqonmind.com</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Subscribe</h4>
+                  <div class="subscribe-box">
+                     <p class="subcribe-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, ipsum.</p>
+                     <form>
+                        <div class="form-group">
+                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button class="btn btn-sub">Beri Tahu Saya!</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+</body>
+
+
+</html>

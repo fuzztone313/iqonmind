@@ -1,0 +1,732 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> 
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang=""> 
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang=""> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>iQonmind</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shorcut icon" href="./assets/img/favicon/favicon.ico">
+	<link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./assets/css/lightslider.css" rel="stylesheet">
+	<link href="./assets/css/responsive.css" rel="stylesheet">
+	<link href="./assets/css/style.min.css" rel="stylesheet">
+	<link href="./assets/css/custom.css" rel="stylesheet">
+	<!-- <script src="./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+	<script "type=text/html" src="./assets/js/vendor.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./assets/js/lightslider.js"></script>
+	<script src="./assets/js/function.js"></script>
+	<script src="./assets/js/custom.js"></script>
+	
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+
+ <!-- navigation.nunjucks -->
+<header>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top iqonmind-nav">
+      <a class="navbar-brand" href="home.html">
+         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav">
+      </a>
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+         aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse collapse-flex justify-content-around" id="navbarsExampleDefault">
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-iqo dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Kategori</a>
+               <div class="dropdown-menu dropdown-iqo" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/laptop-ico.svg" alt="" class="nav-ico"> Laptop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/desktop-ico.svg" alt="" class="nav-ico"> Desktop</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/monitor-ico.svg" alt="" class="nav-ico"> Monitor</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/server-ico.svg" alt="" class="nav-ico"> Server</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/printer-ico.svg" alt="" class="nav-ico"> Printer</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/scan-ico.svg" alt="" class="nav-ico"> Scanner</a>
+                  <a class="dropdown-item" href="#">
+                     <img src="./assets/img/icons/ink-toner-ico.svg" alt="" class="nav-ico"> Ink &amp; Toner</a>
+               </div>
+            </li>
+         </ul>
+         <div class="search-wraper">
+            <div class="src-left">
+               <span class="search-ico-wraper">
+                  <i class="fa fa-search ico-src" aria-hidden="true"></i>
+               </span>
+               <div class="input-search">
+                  <input type="text" class="form-control input-src-custom" id="cariproduk" aria-describedby="cariproduk" placeholder="Cari Produk">
+               </div>
+            </div>
+            <div class="src-right">
+               <div class="select-search">
+                  <select class="form-control select-src-custom" id="exampleFormControlSelect1">
+                     <option>Semua Kategori</option>
+                     <option>Laptop</option>
+                     <option>Desktop</option>
+                     <option>Monitor</option>
+                     <option>Server</option>
+                     <option>Printer</option>
+                     <option>Scanner</option>
+                     <option>Ink &amp; Toner</option>
+                  </select>
+               </div>
+               <div class="button-search">
+                  <button class="btn btn-src">Cari</button>
+               </div>
+            </div>
+         </div>
+         <div class="nav-profil-wraper">
+            <div class="dropdown show">
+                  <a href="cart.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-cart" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">Total: <span class="cart-num">2 Barang</span></h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/01.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="cart.html" class="cart-item-nav">
+                                    <div class="cart-item-wraper">
+                                          <img src="./assets/img/products/02.png" alt="" class="img-fluid img-nav-cart">
+                                          <span class="nav-cart-pr-name">HP 240 G6 NOTEBOOK PC</span>
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Keranjang</a>
+                  </div>
+            </div>
+            <div class="dropdown show">
+                  <a href="notification.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="pop-number">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-notification" aria-labelledby="dropdownCart">
+                        <h6 class="dropdown-header dropdwon-title">
+                              Notifikasi
+                        </h6>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="notification.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                         <span class="num-notif">1</span> Pesan baru pada halaman diskusi produk.
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item show-cart-btn dropdown-item-nav-cart" href="cart.html">Lihat Semua Notifikasi</a>
+                  </div>
+            </div>
+            <a href="wishlist.html" class="nav-profile-link">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown show">
+                  <a href="profile.html" class="nav-profile-link" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/img/cl-03.jpg" alt="" class="profile-ico">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-profile" aria-labelledby="dropdownCart">                        
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="profile.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                          <i class="fa fa-user" aria-hidden="true"></i> Profile Anda
+                                    </div>
+                              </a>
+                        </div>
+                        <div class="dropdown-item dropdown-item-nav-cart ">
+                              <a href="login.html" class="cart-item-nav">
+                                    <div class="notif-message">
+                                           <i class="fa fa-power-off" aria-hidden="true"></i> Logout
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+
+   <main role="main" class="main-page">
+      <section class="main-methode-payment">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="page-breadcrumb">
+                   <nav class="breadcrumb-nav">
+                      <ul class="ol-breadcrumb">
+                         <li class="li-breadcrumb">
+                            <a href="home.html" class="bread-link">Beranda</a> 
+                            <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                         </li>
+                         <li class="li-breadcrumb">
+                            <a href="cart.html" class="bread-link">Keranjang Belanja</a> 
+                            <i class="fa fa-chevron-right bread-ico" aria-hidden="true"></i>
+                         </li>
+                         <li class="li-breadcrumb">
+                            Pilih Metode Pembayaran
+                         </li>
+                      </ul>
+                   </nav>
+                </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-11">
+                  <div class="methode-container">
+                     <div class="row">
+                        <div class="col-lg-7">
+                           <div class="card mb-5">
+                              <div class="card-header card-header-payment">
+                                 Pembayaran
+                              </div>
+                              <div class="card-body card-body-payment">
+                                 <div class="total-payment-num">Total</div>
+                                 <div class="total-payment-flex">
+                                    <div class="total-unit-num">IDR 21.884.000</div>
+                                    <div class="total-detail-modal"  data-toggle="modal" data-target="#modalPayment">Detail Tagihan</div>
+                                    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                       <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                             <div class="modal-header modal-header-payment">
+                                                <h5 class="modal-title" id="exampleModalLabel">Detail Tagihan</h5>
+                                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                   <span aria-hidden="true">&times;</span>
+                                                </button> -->
+                                                <div class="close-detail-payment" data-dismiss="modal" aria-label="Close">
+                                                  <i class="fa fa-times ico-close" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="modal-body">
+                                                <table class="table table-payment">
+                                                   <tbody>
+                                                      <tr class="tr-payment">
+                                                         <td class="td-item-payment">
+                                                            <span class="item-payment">HP 240 G6 NOTEBOOK PC</span>
+                                                            <span class="sub-price">1 X 10.987.000</span>
+                                                         </td>
+                                                         <td class="td-price-payment">IDR 10.987.000</td>
+                                                      </tr>
+                                                      <tr class="tr-payment">
+                                                         <td class="td-item-payment">
+                                                            <span class="item-payment">HP ZBOOK 14U G5 BASE MODEL MOBILE WORKSTATION</span>
+                                                            <span class="sub-price">1 X 10.987.000</span>
+                                                         </td>
+                                                         <td class="td-price-payment">IDR 10.987.000</td>
+                                                      </tr>
+                                                      <tr class="tr-payment"> 
+                                                         <td class="td-item-payment">
+                                                            <span class="item-payment">Biaya Pengiriman Barang</span>
+                                                            <span class="sub-price">20.000</span>
+                                                         </td>
+                                                         <td class="td-price-payment">IDR 20.000</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                             <div class="modal-footer">
+                                                <table class="table">
+                                                   <tbody>
+                                                      <tr class="tr-payment"> 
+                                                         <td class="td-item-payment td-none-border">
+                                                            <span class="item-payment">Total Pembayaran</span>
+                                                         </td>
+                                                         <td class="td-price-payment-footer">IDR 21.904.000</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="total-payment-navs">
+                                  <ul class="nav flex-column nav-coloum-payment mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                      <span class="payment-subtitle">Cicilan Tanpa Kartu Kredit</span>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-kredivo-tab" data-toggle="pill" href="#pills-kredivo" role="tab" aria-controls="pills-kredivo"
+                                        aria-selected="true">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/kredivo.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Kredivo</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-akulaku-tab" data-toggle="pill" href="#pills-akulaku" role="tab" aria-controls="pills-akulaku"
+                                        aria-selected="false">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/akulaku.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Akulaku</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <span class="payment-subtitle">Transfer Bank</span>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay active" id="pills-bca-tab" data-toggle="pill" href="#pills-bca" role="tab" aria-controls="pills-bca"
+                                        aria-selected="true">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/bca.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Bank BCA</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-cimb-tab" data-toggle="pill" href="#pills-cimb" role="tab" aria-controls="pills-cimb"
+                                        aria-selected="false">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/cimb.svg" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Bank CIMB Niaga</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-mandiri-tab" data-toggle="pill" href="#pills-mandiri" role="tab" aria-controls="pills-mandiri"
+                                        aria-selected="true">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/mandiri.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Bank Mandiri</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-bni-tab" data-toggle="pill" href="#pills-bni" role="tab" aria-controls="pills-bni"
+                                        aria-selected="false">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/bni.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Bank BNI</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link nav-pay" id="pills-bri-tab" data-toggle="pill" href="#pills-bri" role="tab" aria-controls="pills-bri"
+                                        aria-selected="false">
+                                        <div class="nav-link-unit">
+                                          <div class="nav-chekcbox-custom"></div>
+                                          <div class="nav-link-img">
+                                            <img src="./assets/img/payment/bri.png" alt="" class="img-fluid img-nav-asset">
+                                          </div>
+                                          <div class="nav-link-payname">Bank BRI</div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  
+                                 </div>
+                                 <div class="card-footer-payment">
+                                   <button class="btn btn-load-payment btn-block">Pilih Metode Pembayaran Lainnya</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="tab-content-payment-detail">
+                            <div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade" id="pills-kredivo" role="tabpanel" aria-labelledby="pills-kredivo-tab">
+                                <div class="payment-detail-unit" id="tab-kredivo-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Pembayaran Via Kredivo</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/kredivo.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar
+                                        </button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-akulaku" role="tabpanel" aria-labelledby="pills-akulaku-tab">
+                                <div class="payment-detail-unit" id="tab-aklaku-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Pembayaran Via Akulaku</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/akulaku.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar
+                                        </button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade show active" id="pills-bca" role="tabpanel" aria-labelledby="pills-bca-tab">
+                                <div class="payment-detail-unit" id="tab-bca-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Transfer Bank BCA</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/bca.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-cimb" role="tabpanel" aria-labelledby="pills-cimb-tab">
+                                <div class="payment-detail-unit" id="tab-cimb-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Transfer Bank CIMB Niaga</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/cimb.svg" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-mandiri" role="tabpanel" aria-labelledby="pills-mandiri-tab">
+                                <div class="payment-detail-unit" id="tab-mandiri-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Transfer Bank Mandiri</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/mandiri.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-bni" role="tabpanel" aria-labelledby="pills-bni-tab">
+                                <div class="payment-detail-unit" id="tab-bri-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Transfer Bank BNI</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/bni.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-bri" role="tabpanel" aria-labelledby="pills-bri-tab">
+                                <div class="payment-detail-unit" id="tab-bca-unit-payment">
+                                  <div class="card mb-5">
+                                    <div class="card-header card-header-payment-unit">
+                                      <div class="card-header-payment-detail">
+                                        <div class="chpd-title">Transfer Bank BRI</div>
+                                        <div class="chpd-logo">
+                                          <img src="./assets/img/payment/bri.png" alt="" class="img-fluid img-nav-asset">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body card-body-payment-detail">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">No Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="norekening">
+                                          <small id="norekening" class="form-text text-muted">masukan nomor rekening sesuai dengan buku tabungan.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Nama Pemilik Rekening</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namarekening">
+                                          <small id="namarekening" class="form-text text-muted">masukan nama pemilik sesuai dengan buku tabungan</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="alert alert-danger" role="alert">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ducimus perferendis esse, a eligendi expedita?
+                                          </div>
+                                        </div>
+                                        <a href="payment.html" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</a>
+                                        <!-- <button type="submit" class="btn btn-submit-payment btn-block">
+                                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Bayar</button> -->
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+   </main>
+
+ <footer>
+   <div class="container-fluid">
+      <div class="row justify-content-center">
+         <div class="col-md-11">
+            <div class="row">
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">iQonmind</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="about.html" class="link-ft">Tentang Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="privacy.html" class="link-ft">Kebijakan Perusahaan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="terms.html" class="link-ft">Syarat dan Ketentuan</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="contact.html" class="link-ft">Hubungi Kami</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-md-6">
+                  <h4 class="footer-title">Fitur</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft">
+                        <a href="blog.html" class="link-ft">Blog</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="partner.html" class="link-ft">Partner Kami</a>
+                     </li>
+                     <li class="li-ft">
+                        <a href="faq.html" class="link-ft">FAQ</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Hubungi Kami</h4>
+                  <ul class="ul-ft">
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-map-marker ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">Address: 17504 Carlton Cuevas Rd, Gulfport, MS, 39503</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-phone ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">+(704) 279-1249</span>
+                     </li>
+                     <li class="li-ft li-flex">
+                        <i class="fa fa-envelope-o ico-ft" aria-hidden="true"></i> 
+                        <span class="ico-caption">letstalk@iqonmind.com</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <h4 class="footer-title">Subscribe</h4>
+                  <div class="subscribe-box">
+                     <p class="subcribe-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, ipsum.</p>
+                     <form>
+                        <div class="form-group">
+                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button class="btn btn-sub">Beri Tahu Saya!</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+
+</body>
+
+
+</html>
